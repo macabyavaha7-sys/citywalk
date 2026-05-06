@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L_One神奇角落在哪里</title>
+    <meta
+      name="description"
+      content="L_One神奇角落在哪里，城市人文摄影、真实街头观察与图文内容记录。"
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="顶部导航">
+      <nav class="top-nav">
+        <div class="nav-left">
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="category-menu" aria-label="打开内容分类">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="category-menu" id="category-menu" hidden>
+            <a href="#works" data-category="城市角落">城市角落</a>
+            <a href="#works" data-category="摄影技巧">摄影技巧</a>
+            <a href="#works" data-category="趣味瞬间">趣味瞬间</a>
+          </div>
+        </div>
+
+        <a class="brand" href="./index.html" aria-label="回到首页">L_One神奇角落在哪里</a>
+
+        <form class="search-form" role="search">
+          <label class="visually-hidden" for="site-search">检索内容关键词</label>
+          <input id="site-search" name="q" type="search" placeholder="搜索关键词" autocomplete="off">
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="section-kicker">城市人文摄影</p>
+          <h1 id="hero-title">
+            <span class="slogan-line slogan-line-main">钻进真实世界</span>
+            <span class="slogan-line slogan-line-sub">保持呼吸，无论什么味道</span>
+            <span class="slogan-line slogan-line-sub">保持体感，无论什么温度</span>
+          </h1>
+        </div>
+
+        <article class="featured-card" aria-labelledby="featured-title">
+          <a class="featured-link" href="#" id="featured-link">
+            <div class="featured-cover image-placeholder image-placeholder-featured" id="featured-cover">
+              <span class="featured-title" id="featured-title">推荐内容标题待替换</span>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section class="works-section" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <p class="section-kicker">Latest Works</p>
+          <h2 id="works-title">作品展示</h2>
+        </div>
+
+        <div class="works-grid" id="works-grid" aria-live="polite"></div>
+
+        <p class="empty-state" id="empty-state" hidden>没有找到匹配内容。</p>
+
+        <nav class="pagination" aria-label="作品分页">
+          <button type="button" data-page-action="first">首页</button>
+          <button type="button" data-page-action="prev">上一页</button>
+          <span id="page-status" aria-live="polite">1 / 1</span>
+          <button type="button" data-page-action="next">下一页</button>
+          <button type="button" data-page-action="last">尾页</button>
+        </nav>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="section-kicker">Find L_One</p>
+          <h2 id="contact-title">联系方式</h2>
+        </div>
+
+        <div class="social-links" id="social-links" aria-label="其他平台主页"></div>
+
+        <div class="qr-list" aria-label="联系方式二维码">
+          <article class="qr-item">
+            <div class="qr-placeholder" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div>
+              <h3>邮箱</h3>
+              <p>hello@example.com</p>
+            </div>
+          </article>
+
+          <article class="qr-item">
+            <div class="qr-placeholder" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div>
+              <h3>微信</h3>
+              <p>L_One</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

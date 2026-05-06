@@ -452,10 +452,12 @@ main {
 
 .social-link {
   display: grid;
-  grid-template-columns: 38px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  justify-items: center;
   align-items: center;
-  min-height: 58px;
-  padding: 10px;
+  min-width: 0;
+  min-height: 84px;
+  padding: 12px 8px 10px;
   background: var(--panel);
   border: 1px solid var(--ink);
 }
@@ -473,10 +475,12 @@ main {
 
 .social-name {
   overflow: hidden;
-  padding-left: 10px;
-  font-size: 13px;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 11px;
   font-weight: 900;
   line-height: 1.15;
+  text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -618,19 +622,56 @@ main {
     font-size: 12px;
   }
 
-  .social-links,
-  .qr-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .pagination {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .pagination button {
+    min-width: 0;
+    min-height: 28px;
+    padding: 0 9px;
+    font-size: 12px;
+  }
+
+  #page-status {
+    min-width: 42px;
+    font-size: 12px;
+  }
+
+  .social-links {
+    display: flex;
+    grid-template-columns: none;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
   }
 
   .social-link {
-    grid-template-columns: 34px minmax(0, 1fr);
-    min-height: 54px;
+    flex: 0 0 72px;
+    min-height: 70px;
+    padding: 9px 6px 8px;
+    scroll-snap-align: start;
+  }
+
+  .social-name {
+    margin-top: 7px;
+    font-size: 10px;
   }
 
   .social-mark {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .qr-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .qr-item {

@@ -13,3 +13,7 @@
 单篇文章页面完成后，把 `app.js` 里的 `featuredPost`、`posts`、`socialProfiles` 替换为真实标题、封面、链接、发布日期和平台主页地址即可。
 
 当前页面是纯静态文件，可以直接打开 `index.html` 预览，也可以托管到 GitHub Pages。
+
+## 设计标准
+
+后续制作文章页、栏目页或其他页面前，先参考 `DESIGN_STANDARD.md`。该文件记录了当前主页已经确认的设计理念、移动端规则、组件样式和 GitHub 更新流程。
